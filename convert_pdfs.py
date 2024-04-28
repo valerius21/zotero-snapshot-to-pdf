@@ -90,6 +90,7 @@ class Converter:
                 continue
             try:
                 (key, path) = self.write_file_to_pdf(parent_item, link)
+                logger.info("Uploading")
                 self.upload_file_to_zotero(key, path)
             except Exception as e:
                 logger.error(e)
@@ -131,6 +132,7 @@ def execute_on_zotero_change(converter: Converter, zotero_cfg: dict) -> None:
     """Runs the converter on every file change after its initial run"""
     converter.discover_html_attachments()
     logger.warn("File watcher is disabled")
+    logger.info("done")
     # logger.info("Starting to watch for file changes")
     # watch_path = get_watch_dir(zotero_cfg)
     # for _ in watchfiles.watch(watch_path):

@@ -1,6 +1,6 @@
 # Zotero Website Snapshot to PDF
 
-This is the complementary repository to [my blog post](https://valerius.me/).
+This is the complementary repository to [my blog post](https://valerius.me/blog/converting-your-zotero-website-snapshots-to-pdf).
 
 ## Disclaimer and development state
 
