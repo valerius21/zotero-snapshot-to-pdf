@@ -14,6 +14,7 @@ uploads duplicates, if the script has been run before.
 
 ## Prerequisites
 
+0. Back-up your Zotero folder
 1. Copy over `config.example.toml` to `config.toml` and update it with
    the corresponding data
 2. Create a Virtual Environment (optional) and activate it

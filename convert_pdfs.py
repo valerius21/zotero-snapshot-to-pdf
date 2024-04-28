@@ -130,11 +130,12 @@ def get_config() -> tuple[dict, dict]:
 def execute_on_zotero_change(converter: Converter, zotero_cfg: dict) -> None:
     """Runs the converter on every file change after its initial run"""
     converter.discover_html_attachments()
-    logger.info("Starting to watch for file changes")
-    watch_path = get_watch_dir(zotero_cfg)
-    for _ in watchfiles.watch(watch_path):
-        logger.info("File changes detected")
-        converter.discover_html_attachments()
+    logger.warn("File watcher is disabled")
+    # logger.info("Starting to watch for file changes")
+    # watch_path = get_watch_dir(zotero_cfg)
+    # for _ in watchfiles.watch(watch_path):
+    #     logger.info("File changes detected")
+    #     converter.discover_html_attachments()
 
 
 def main():
