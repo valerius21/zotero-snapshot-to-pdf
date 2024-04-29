@@ -1,3 +1,4 @@
+> You can find an up-to-date rewrite here: https://github.com/valerius21/zotero-website-snapshot-converter
 # Zotero Website Snapshot to PDF
 
 This is the complementary repository to [my blog post](https://valerius.me/blog/converting-your-zotero-website-snapshots-to-pdf).
